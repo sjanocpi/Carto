@@ -19,9 +19,13 @@ Move Json data lat/long to replace them,  for France and her outer-sea territori
   [55.321167,-21.248531]
 
   les valeurs
+  
   $long = $matches[1] - 60.5;
+  
   et
+  
   $lat = $matches[3] + 66.8;
+  
   placeront La Réunion à peu près à coté de ce point
 
   Mayotte :

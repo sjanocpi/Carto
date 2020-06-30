@@ -24,18 +24,32 @@ Move Json data lat/long to replace them,  for France and her outer-sea territori
   placeront La Réunion à peu près à coté de ce point
 
   Mayotte :
+  
   $long = $matches[1] - 50.6;
+  
   $lat = $matches[3] + 59.0;
+  
   pour à-peu-près pareil
+  
+  
 
 
   La Martinique :
+  
   $long = $matches[1] + 56.6;
+  
   $lat = $matches[3] + 31.4;
+  
   pour à-peu-près pareil
+  
+  
 
   Les fichiers json peuvent être testés ici :
+  
   http://geojson.io/#map=2/20.0/0.0
+  
   le regex ici
+  
   https://regex101.com/
+  
 *

@@ -1,0 +1,40 @@
+
+Carto
+
+Changer le niveau de zoom par défaut d'un carte à partir du JSON
+
+Si il faut déplacer le coordonnées du JSON il faut le faire avant de zoomer la carte.
+cf. deplacer-json-Nord-Sud-Est-Ouest.php
+
+Aller sur https://mapshaper.org/
+
+	Charger le fichier JSON de la carte à agrandir
+
+	Dans le menu de droite sélectionner : export
+		choisir TopoJSON
+	Exporter via la commande idoine
+
+
+Ouvrir le fichier exporté dans un éditeur de texte/dev
+
+rechercher la chaîne : scale
+
+on doit trouver quelque chose qui ressemble à ça :
+
+	scale":[0.00000715671116546862,0.000006506606878187258]
+
+Copier la 1ère valeur et la multiplier par x en  fonction de l'échelle voulue
+	généralement entre 2 et 5
+	
+	Entrer les nouvelles valeurs, dans le cas d'une multiplication par 3 j'ai obtenu :
+
+	scale":[0.00002147,0.00001952]
+
+Sauvegarder le fichier et ajouter le fichier dans mapshaper ou geojson* pour tester le zoom
+On peut y avoir 2 fichiers côte à côte il faut juste les afficher via les "yeux" du menu layers
+
+Parfois, en fonction de l'appli d'intégration il faudra ré-exporter le fichier au format GeoJSON ou  JSON via mapshaper
+
+ 
+* On peut aussi tester le zoom en contexte avec :
+	http://geojson.io/#map=2/20.0/0.0

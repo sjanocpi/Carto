@@ -4,11 +4,17 @@ Move Json data lat/long to replace them,  for France and her outer-sea territori
 
 ------------ Pour le calcul dans la fonction numCallBack ------------
   par exemple :
+  
   Un point dans le Golfe de Gascogne renvoie :
+  
   Latitude	45.6140
+  
   Longitude	-4.7241
 
   La Réunion renvoie
+  
+  
+  
   [55.321167,-21.248531]
 
   les valeurs
